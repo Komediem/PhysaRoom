@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 0.05f;
     Rigidbody2D rb;
     Vector2 position = new Vector2(0f, 0f);
-    public FoodScript foodScript;
+
+    public GameObject experienceText;
 
     private void Start()
     {
@@ -34,7 +36,16 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.CompareTag("Food"))
         {
-            foodScript.StartCoroutine(NextLevel);
+            Debug.Log("Bing Chilling");
+            StartCoroutine(NextLevel());
         }
+    }
+
+    public IEnumerator NextLevel()
+    {
+        Debug.Log("Mes burnes");
+        experienceText.SetActive(true);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

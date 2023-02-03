@@ -8,6 +8,7 @@ public class FoodScript : MonoBehaviour
     public GameObject experienceText;
     public IEnumerator NextLevel()
     {
+        Debug.Log("Mes burnes");
         experienceText.SetActive(true);
 
         yield return new WaitForSeconds(2);
