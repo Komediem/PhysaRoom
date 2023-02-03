@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 0.05f;
     Rigidbody2D rb;
     Vector2 position = new Vector2(0f, 0f);
+    public FoodScript foodScript;
 
     private void Start()
     {
@@ -26,6 +27,14 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.Mouse0))
         {
             rb.MovePosition(position);
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Food"))
+        {
+            foodScript.StartCoroutine(NextLevel);
         }
     }
 }
