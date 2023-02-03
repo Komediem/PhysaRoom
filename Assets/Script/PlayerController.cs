@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Vector2 position = new Vector2(0f, 0f);
 
-    public GameObject experienceText;
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,22 +28,5 @@ public class PlayerController : MonoBehaviour
         {
             rb.MovePosition(position);
         }
-    }
-
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Food"))
-        {
-            Debug.Log("Bing Chilling");
-            StartCoroutine(NextLevel());
-        }
-    }
-
-    public IEnumerator NextLevel()
-    {
-        Debug.Log("Mes burnes");
-        experienceText.SetActive(true);
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

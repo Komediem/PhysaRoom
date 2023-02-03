@@ -6,12 +6,20 @@ using UnityEngine.SceneManagement;
 public class FoodScript : MonoBehaviour
 {
     public GameObject experienceText;
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            StartCoroutine(NextLevel());
+        }
+    }
+
     public IEnumerator NextLevel()
     {
         Debug.Log("Mes burnes");
         experienceText.SetActive(true);
-
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(+1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
