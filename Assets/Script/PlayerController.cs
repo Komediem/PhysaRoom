@@ -29,4 +29,9 @@ public class PlayerController : MonoBehaviour
             rb.MovePosition(position);
         }
     }
+
+    public void Death()
+    {
+        //SceneManager.LoadScene
+    }
 }
