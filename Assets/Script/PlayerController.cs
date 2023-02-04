@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour
         {
             rb.MovePosition(position);
         }
+
+        if(Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            Debug.Log("Saucisse");
+        }
     }
 
 
