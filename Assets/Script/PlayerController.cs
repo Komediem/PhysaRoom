@@ -37,10 +37,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.CompareTag("DeathZone"))
+        {
+            Death();
+        }
+    }
 
     public void Death()
     {
-        Destroy(this);
+        Destroy(gameObject);
         Instantiate(DeathEffect, transform.position, transform.rotation);
         //SceneManager.LoadScene
     }

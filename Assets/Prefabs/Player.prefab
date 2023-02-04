@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.05
-  doorAnimator: {fileID: 4413255112773522553, guid: 377e4714b3d10d748b053fc1aff2256a, type: 3}
+  DeathEffect: {fileID: 511579026409017191, guid: 7fa1362637c0d1745b95aeeef9550fbe, type: 3}
 --- !u!50 &7084367709756285714
 Rigidbody2D:
   serializedVersion: 4
