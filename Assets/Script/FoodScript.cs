@@ -17,7 +17,6 @@ public class FoodScript : MonoBehaviour
 
     public IEnumerator NextLevel()
     {
-        Debug.Log("Mes burnes");
         experienceText.SetActive(true);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

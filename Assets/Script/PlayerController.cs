@@ -5,30 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10f;
-    Vector2 lastClickedPos;
-    bool moving;
-
-    private void Update()
-    {
-        if(Input.GetMouseButtonDown(0))
-        {
-            lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            moving = true;  
-        }
-
-        if(moving && (Vector2)transform.position != lastClickedPos)
-        {
-            float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, lastClickedPos, step);
-        }
-        else
-        {
-            moving = false;
-        }
-    }
-
-    /*
     Vector3 mousePosition;
     public float moveSpeed = 0.05f;
     Rigidbody2D rb;
@@ -48,12 +24,11 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(Input.GetKey(KeyCode.Mouse0))
         {
             rb.MovePosition(position);
         }
     }
-    */
 
 
     public void Death()
