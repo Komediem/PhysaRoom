@@ -123,6 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &226670041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5498316428126057337, guid: 6df2a8c31351265428865509ac369394, type: 3}
+  m_PrefabInstance: {fileID: 407296591}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &226670045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226670041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0307dd6b38fd148b55c7f18c142eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorAnimator: {fileID: 1579059079}
 --- !u!1001 &407296591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6102,6 +6120,11 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!95 &1579059079 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4413255112773522553, guid: 377e4714b3d10d748b053fc1aff2256a, type: 3}
+  m_PrefabInstance: {fileID: 2028162803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1675881462 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5699200802044800226, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
@@ -13701,12 +13724,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5699200802044800226, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699200802044800226, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5699200802044800236, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
       propertyPath: m_fontColor.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699200802044800236, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699200802044800236, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699200802044800236, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5699200803668798515, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
       propertyPath: m_Pivot.x
