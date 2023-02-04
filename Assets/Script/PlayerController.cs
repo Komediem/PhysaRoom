@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Vector2 position = new Vector2(0f, 0f);
 
+    public GameObject DeathEffect;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,6 +40,8 @@ public class PlayerController : MonoBehaviour
 
     public void Death()
     {
+        Destroy(this);
+        Instantiate(DeathEffect, transform.position, transform.rotation);
         //SceneManager.LoadScene
     }
 }
