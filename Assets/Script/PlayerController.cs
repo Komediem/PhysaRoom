@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         Destroy(gameObject);
         Instantiate(DeathEffect, transform.position, transform.rotation);
-        //SceneManager.LoadScene
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }

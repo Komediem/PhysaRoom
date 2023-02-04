@@ -6,6 +6,7 @@ public class LaserInterruptor : MonoBehaviour
 {
     public GameObject Laser;
 
+    public GameObject ButtonStandard;
     public GameObject ButtonHighlighted;
     public GameObject ButtonPressed;
 
@@ -17,7 +18,14 @@ public class LaserInterruptor : MonoBehaviour
         {
             Debug.Log("Bing Chilling");
             Laser.SetActive(false);
+            ButtonStandard.SetActive(false);
+            ButtonHighlighted.SetActive(false);
             ButtonPressed.SetActive(true);
         }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        ButtonHighlighted.SetActive(false);
     }
 }
