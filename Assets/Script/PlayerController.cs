@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 0.05f;
     Rigidbody2D rb;
     Vector2 position = new Vector2(0f, 0f);
+    public Animator doorAnimator;
 
     private void Start()
     {
@@ -27,6 +28,17 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.Mouse0))
         {
             rb.MovePosition(position);
+        }
+    }
+
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("InterruptorDoor"))
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                doorAnimator.SetBool("IsOpening", true);
+            }
         }
     }
 

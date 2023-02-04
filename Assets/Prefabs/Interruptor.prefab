@@ -95,7 +95,6 @@ GameObject:
   - component: {fileID: 5498316428126057334}
   - component: {fileID: 5498316428126057332}
   - component: {fileID: 5498316428126057335}
-  - component: {fileID: 5498316428126057333}
   m_Layer: 0
   m_Name: Interruptor
   m_TagString: InterruptorDoor
@@ -187,17 +186,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
---- !u!114 &5498316428126057333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498316428126057337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc0307dd6b38fd148b55c7f18c142eda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorAnimator: {fileID: 4413255112773522553, guid: 377e4714b3d10d748b053fc1aff2256a, type: 3}
-  Opened: 0
