@@ -452,6 +452,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1652005634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5699200802752704001, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
+  m_PrefabInstance: {fileID: 5699200803670296340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1694503649
 GameObject:
   m_ObjectHideFlags: 0
@@ -23111,6 +23116,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4386093081100948823, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1652005634}
     - target: {fileID: 4386093081100948823, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
       propertyPath: experienceText
       value: 

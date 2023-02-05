@@ -613,6 +613,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4386093081100948823, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 5699200803670296342}
+    - target: {fileID: 4386093081100948823, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
       propertyPath: experienceText
       value: 
       objectReference: {fileID: 5699200803670296341}
@@ -21669,5 +21673,10 @@ PrefabInstance:
 --- !u!1 &5699200803670296341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9011218569790366563, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
+  m_PrefabInstance: {fileID: 5699200803670296340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5699200803670296342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5699200802752704001, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
   m_PrefabInstance: {fileID: 5699200803670296340}
   m_PrefabAsset: {fileID: 0}
