@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private Transform mTransform;
 
     public GameObject DeathEffect;
+    public GameObject Player;
 
     private void Start()
     {
@@ -44,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKeyUp(KeyCode.Mouse0))
         {
-            Debug.Log("Saucisse");
+            //Debug.Log("Saucisse");
         }
     }
 
@@ -52,14 +53,15 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.CompareTag("DeathZone"))
         {
-            Death();
+            Destroy(Player);
+            Instantiate(DeathEffect, transform.position, transform.rotation);
+            StartCoroutine(Death());
         }
     }
 
-    public void Death()
+    IEnumerator Death()
     {
-        Destroy(gameObject);
-        Instantiate(DeathEffect, transform.position, transform.rotation);
+        yield return new WaitForSeconds(2);
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
