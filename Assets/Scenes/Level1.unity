@@ -13839,6 +13839,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5699200802044800236, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
+      propertyPath: m_text
+      value: EXPERIENCE SUCCEED
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699200802044800236, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
