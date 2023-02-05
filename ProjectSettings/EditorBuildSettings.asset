@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 617afebd52ab11e44a95a6739e0dc7d0
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 6c8f7a63781688a4896a61eb546e9737
+  - enabled: 1
     path: Assets/Scenes/LD Test/LDTestBry 01.unity
     guid: 8e5fa4054d491e94cb96f236689d1ed0
   - enabled: 1
