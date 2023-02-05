@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PHYSAROOM
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 647dc90398ee485478a526796ff4c4e8, type: 2}
+  m_sharedMaterial: {fileID: -4958565030905113069, guid: 647dc90398ee485478a526796ff4c4e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
