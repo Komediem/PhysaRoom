@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &368812668 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1937144485201254891, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
+  m_PrefabInstance: {fileID: 5699200803670296340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &407296591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6115,11 +6120,6 @@ TilemapCollider2D:
 Animator:
   m_CorrespondingSourceObject: {fileID: 4413255112773522553, guid: 377e4714b3d10d748b053fc1aff2256a, type: 3}
   m_PrefabInstance: {fileID: 2028162803}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1675881462 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5699200802044800226, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-  m_PrefabInstance: {fileID: 5699200803670296340}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1911815274
 GameObject:
@@ -13590,7 +13590,7 @@ PrefabInstance:
     - target: {fileID: 4386093081100948823, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
       propertyPath: experienceText
       value: 
-      objectReference: {fileID: 1675881462}
+      objectReference: {fileID: 368812668}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
@@ -13838,6 +13838,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5699200802044800236, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5699200803668798515, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
       propertyPath: m_Pivot.x
       value: 0
