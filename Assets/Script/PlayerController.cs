@@ -14,9 +14,13 @@ public class PlayerController : MonoBehaviour
     public GameObject DeathEffect;
     public GameObject Player;
 
+    [SerializeField]
+    private CircleCollider2D colliderChara;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        colliderChara = GetComponent<CircleCollider2D>();
         mTransform = this.transform;
     }
 
@@ -55,6 +59,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(Player);
             Instantiate(DeathEffect, transform.position, transform.rotation);
+            colliderChara.enabled = false;
             StartCoroutine(Death());
         }
     }
