@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 226670045, guid: 6df2a8c31351265428865509ac369394, type: 3}
+      propertyPath: doorAnimator
+      value: 
+      objectReference: {fileID: 2039471709}
     - target: {fileID: 5498316428126057334, guid: 6df2a8c31351265428865509ac369394, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -216,7 +220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413255112773522555, guid: 377e4714b3d10d748b053fc1aff2256a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75590277
+      value: 2.5889668
       objectReference: {fileID: 0}
     - target: {fileID: 4413255112773522555, guid: 377e4714b3d10d748b053fc1aff2256a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -425,27 +429,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &469562507 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5498316428126057337, guid: 6df2a8c31351265428865509ac369394, type: 3}
-  m_PrefabInstance: {fileID: 57683351}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &469562508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 469562507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc0307dd6b38fd148b55c7f18c142eda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorAnimator: {fileID: 2039471709}
-  InterruptorStandard: {fileID: 0}
-  InterruptorHighlighted: {fileID: 0}
-  InterruptorPressed: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,27 +638,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &581347335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5498316428126057337, guid: 6df2a8c31351265428865509ac369394, type: 3}
-  m_PrefabInstance: {fileID: 606621222}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &581347336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581347335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc0307dd6b38fd148b55c7f18c142eda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorAnimator: {fileID: 1413208060}
-  InterruptorStandard: {fileID: 0}
-  InterruptorHighlighted: {fileID: 0}
-  InterruptorPressed: {fileID: 0}
 --- !u!1001 &606621222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -684,6 +646,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 226670045, guid: 6df2a8c31351265428865509ac369394, type: 3}
+      propertyPath: doorAnimator
+      value: 
+      objectReference: {fileID: 1413208060}
     - target: {fileID: 5498316428126057334, guid: 6df2a8c31351265428865509ac369394, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -969,7 +935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413255112773522555, guid: 377e4714b3d10d748b053fc1aff2256a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75590277
+      value: 2.9669182
       objectReference: {fileID: 0}
     - target: {fileID: 4413255112773522555, guid: 377e4714b3d10d748b053fc1aff2256a, type: 3}
       propertyPath: m_LocalPosition.x
