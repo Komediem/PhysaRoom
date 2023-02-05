@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 1944195198308747184}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &1944195198341519303
 MonoBehaviour:
@@ -108,6 +108,22 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1944195198341519296}
     m_Modifications:
+    - target: {fileID: 7084367709756285713, guid: 673c4890eda0de44281f0766adb95a5f, type: 3}
+      propertyPath: m_Time
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084367709756285713, guid: 673c4890eda0de44281f0766adb95a5f, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084367709756285713, guid: 673c4890eda0de44281f0766adb95a5f, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.13909149
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084367709756285713, guid: 673c4890eda0de44281f0766adb95a5f, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0.026736319
+      objectReference: {fileID: 0}
     - target: {fileID: 7084367709756285715, guid: 673c4890eda0de44281f0766adb95a5f, type: 3}
       propertyPath: m_RootOrder
       value: -1
