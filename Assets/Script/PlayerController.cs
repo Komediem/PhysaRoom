@@ -9,19 +9,30 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 0.05f;
     Rigidbody2D rb;
     Vector2 position = new Vector2(0f, 0f);
+    private Transform mTransform;
 
     public GameObject DeathEffect;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        mTransform = this.transform;
     }
 
     private void Update()
     {
+        LookAtMouse();
         mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+    }
+
+    private void LookAtMouse()
+    {
+        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - mTransform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        mTransform.rotation = rotation;
     }
 
     private void FixedUpdate()
