@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerTeleport : MonoBehaviour
 {
     private GameObject currentTeleporter;
+    public GameObject TpEffect;
 
     void Update()
     {
@@ -13,6 +14,7 @@ public class PlayerTeleport : MonoBehaviour
             if (currentTeleporter != null)
             {
                 transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
+                Instantiate(TpEffect, transform.position, transform.rotation);
             }
         }
     }
