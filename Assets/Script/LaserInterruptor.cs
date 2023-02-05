@@ -10,9 +10,14 @@ public class LaserInterruptor : MonoBehaviour
     public GameObject ButtonHighlighted;
     public GameObject ButtonPressed;
 
+    private bool IsActivated = true;
+
     public void OnTriggerStay2D(Collider2D collision)
     {
-        ButtonHighlighted.SetActive(true);
+        if (IsActivated == true)
+        {
+            ButtonHighlighted.SetActive(true);
+        }
 
         if (collision.CompareTag("Player") && Input.GetKeyDown(KeyCode.Mouse1))
         {
@@ -21,6 +26,7 @@ public class LaserInterruptor : MonoBehaviour
             ButtonStandard.SetActive(false);
             ButtonHighlighted.SetActive(false);
             ButtonPressed.SetActive(true);
+            IsActivated = false;
         }
     }
 

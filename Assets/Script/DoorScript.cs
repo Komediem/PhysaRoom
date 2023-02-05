@@ -10,9 +10,14 @@ public class DoorScript : MonoBehaviour
     public GameObject InterruptorHighlighted;
     public GameObject InterruptorPressed;
 
+    private bool IsActivated = true;
+
     public void OnTriggerStay2D(Collider2D collision)
     {
-        InterruptorHighlighted.SetActive(true);
+        if(IsActivated == true)
+        {
+            InterruptorHighlighted.SetActive(true);
+        }
 
         if (collision.CompareTag("Player") && Input.GetKeyDown(KeyCode.Mouse1))
         {
@@ -21,6 +26,7 @@ public class DoorScript : MonoBehaviour
             InterruptorStandard.SetActive(false);
             InterruptorHighlighted.SetActive(false);
             InterruptorPressed.SetActive(true);
+            IsActivated = false;
         }
     }
 
