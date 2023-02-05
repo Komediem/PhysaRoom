@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &368812668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1937144485201254891, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-  m_PrefabInstance: {fileID: 5699200803670296340}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &407296591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13575,22 +13570,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2141133174938474423, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
-      propertyPath: m_Color.b
-      value: 0.8509804
-      objectReference: {fileID: 0}
-    - target: {fileID: 2141133174938474423, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8509804
-      objectReference: {fileID: 0}
-    - target: {fileID: 2141133174938474423, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
-      propertyPath: m_Color.r
-      value: 0.8509804
-      objectReference: {fileID: 0}
     - target: {fileID: 4386093081100948823, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
       propertyPath: experienceText
       value: 
-      objectReference: {fileID: 368812668}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e52db1e2281e004f899f6f80de13f2a, type: 3}
@@ -13838,38 +13821,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5699200802044800236, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-      propertyPath: m_text
-      value: EXPERIENCE SUCCEED
-      objectReference: {fileID: 0}
-    - target: {fileID: 5699200802044800236, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5699200802752704003, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-      propertyPath: m_Transition
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5699200802752704003, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-      propertyPath: m_SpriteState.m_HighlightedSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: ea8a52f8597db784287ec3908aa4f221, type: 3}
-    - target: {fileID: 5699200802752704012, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5699200802752704012, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0d1fefea34b614d4184a8fce7f48e6b9, type: 3}
-    - target: {fileID: 5699200803179213333, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5699200803179213333, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5699200803668798515, guid: b56d6eccfaebf4843bcf492d9214ecda, type: 3}
       propertyPath: m_Pivot.x
       value: 0
