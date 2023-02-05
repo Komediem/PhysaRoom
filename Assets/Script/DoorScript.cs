@@ -19,7 +19,6 @@ public class DoorScript : MonoBehaviour
         {
             if (currentButton != null)
             {
-                Debug.Log("Bing Chilling");
                 doorAnimator.SetBool("IsOpening", true);
                 InterruptorStandard.SetActive(false);
                 InterruptorHighlighted.SetActive(false);
