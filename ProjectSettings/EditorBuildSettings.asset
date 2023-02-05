@@ -9,9 +9,42 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 617afebd52ab11e44a95a6739e0dc7d0
   - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry 01.unity
+    guid: 8e5fa4054d491e94cb96f236689d1ed0
+  - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry 03.unity
+    guid: eb0c3ec0001eb8b4e91c4010ff7cc518
+  - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry.unity
+    guid: 76eefce2c56592a40a7cd5499ae72aa8
+  - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry 09.unity
+    guid: 8423c7fb37612484e9910b1e606ba714
+  - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry 04.unity
+    guid: cb7d2bd885d84f44a877b57422dfd7f6
+  - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry 08.unity
+    guid: 720bb202f88312841a7911c248b095f8
+  - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry 02.unity
+    guid: 558dad2303e54dd40912f66dea4db5e2
+  - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry 07.unity
+    guid: 48d298d6524f96a4ea94c5f914722b48
+  - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry 10.unity
+    guid: 8df291f2f05818f40b812efb27669ddb
+  - enabled: 1
+    path: Assets/Scenes/LD Test/LDTestBry 06.unity
+    guid: 153c88bcfa062244c96f4cd8d4841a09
+  - enabled: 0
+    path: Assets/Scenes/LD Test/LDTestBry 05.unity
+    guid: 53bf3a14b467cee47965fd35f0e4a42d
+  - enabled: 0
     path: Assets/Scenes/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level2.unity
     guid: 502b644c2a747b64cb413447871e0c78
   m_configObjects: {}
