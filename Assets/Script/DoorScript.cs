@@ -11,27 +11,47 @@ public class DoorScript : MonoBehaviour
     public GameObject InterruptorPressed;
 
     private bool IsActivated = true;
+    private GameObject currentButton;
 
-    public void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if(IsActivated == true)
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            InterruptorHighlighted.SetActive(true);
-        }
-
-        if (collision.CompareTag("Player") && Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            Debug.Log("Bing Chilling");
-            doorAnimator.SetBool("IsOpening", true);
-            InterruptorStandard.SetActive(false);
-            InterruptorHighlighted.SetActive(false);
-            InterruptorPressed.SetActive(true);
-            IsActivated = false;
+            if (currentButton != null)
+            {
+                Debug.Log("Bing Chilling");
+                doorAnimator.SetBool("IsOpening", true);
+                InterruptorStandard.SetActive(false);
+                InterruptorHighlighted.SetActive(false);
+                InterruptorPressed.SetActive(true);
+                IsActivated = false;
+            }
         }
     }
 
-    public void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        InterruptorHighlighted.SetActive(false);
+        if (collision.CompareTag("Player"))
+        {
+            currentButton = collision.gameObject;
+            if(IsActivated == true)
+            {
+                InterruptorHighlighted.SetActive(true);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            InterruptorHighlighted.SetActive(false);
+
+            if (collision.gameObject == currentButton)
+            {
+                currentButton = null;
+                InterruptorHighlighted.SetActive(false);
+            }
+        }
     }
 }
